@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
+date: 2019-04-20
 ---
 I've seen so many `hello world` references that my brain automatically named this article before I put any thought into it. I'd be lying if I said I wasn't a bit sick of this cliche, but I think it is a fitting title since this is my first post!
 

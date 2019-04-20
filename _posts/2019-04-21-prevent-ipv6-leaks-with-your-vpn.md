@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Prevent IPv6 Leaks With Your VPN"
+date: 2019-04-21
 ---
 
 ## Background

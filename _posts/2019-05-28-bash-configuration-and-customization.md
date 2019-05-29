@@ -4,7 +4,7 @@ title:  "Bash Configuration and Customization"
 date: 2019-05-28
 ---
 
-# What the Shell?
+## What the Shell?
 
 `Bash` is the default shell for many operating systems including MacOS, Ubuntu, Kali, etc. It can even be used on Windows! (Finally!)
 
@@ -14,7 +14,7 @@ Keep reading if you want to learn how to effectively manage your shell environme
 
 ![Crash Bash](/assets/img/crash_bash.png)
 
-# Getting Started
+## Getting Started
 
 In this post, we will take a look at the following files.
 - `.bash_profile`
@@ -30,19 +30,19 @@ ls -a
 
 If you don't see the above 3 files...
 
-1) verify that you are running `Bash`
-
+1. verify that you are running `Bash`
 ```shell
 echo $SHELL
 # => /bin/bash
 ```
 
-2) create them!
+
+2. create them!
 ```shell
 touch ~/.bash_profile ~/.bashrc ~/.bash_aliases
 ```
 
-# Scripts Everywhere
+## Scripts Everywhere
 
 ![Scripts Everywhere](/assets/img/scripts_everywhere.jpg)
 
@@ -52,7 +52,7 @@ This means that all these files should contain valid `Bash` syntax (unless you l
 
 ## .bash_profile
 
-This script is automatically executed for login shells. This means that it will run any time a shell is created by logging in.
+This script is automatically executed for login shells. This means that the code it contains will run any time a shell is created by logging in.
 
 ### Um... What's a Login Shell?
 
@@ -64,7 +64,7 @@ This script is automatically executed for login shells. This means that it will 
 
 ## .bashrc
 
-This script is automatically executed for interactive non-login shells. If you are already logged into your machine and open a new terminal window, it will be a non-login shell (__unless you're using MacOS which spawns login shell by default__).
+This code in this script is automatically executed for interactive non-login shells. If you are already logged into your machine and open a new terminal window, it will be a non-login shell (__unless you're using MacOS which spawns login shell by default__).
 
 ## .bash_aliases
 
@@ -97,69 +97,70 @@ They both mean the same thing:
 "If the file ~/.bash_aliases exists, `source` it"
 - We want to `source` the script instead of running it so it will run in the same shell process.
 
-# Example Time
+## Example Time
 
 I'll share some examples of how I utilize these files.
 
-## .bashrc / .bash_profile Examples
+### .bashrc / .bash_profile Examples
 
 1. I source some files related to [asdf](https://github.com/asdf-vm/asdf)
+    ```bash
+      . $HOME/.asdf/asdf.sh
 
-  ```bash
-  . $HOME/.asdf/asdf.sh
-
-  . $HOME/.asdf/completions/asdf.bash
-  ```
+      . $HOME/.asdf/completions/asdf.bash
+    ```
   After installing some programs such as asdf, the postinstall message will tell you to add additional config to your `.bashrc` / `.bash_profile`.
+
 
 2. I modify my `PATH` to add programs I've installed that don't live in default `PATH` destinations.
   (If you are not sure about what the `PATH` environment variable does, I highly recommend hitting the Googles after reading this. I may write a blog post about `PATH` at some point in the future)
 
-  ```bash
-  export PATH=$PATH:/opt/metasploit-framework/bin
-  ```
+    ```bash
+    export PATH=$PATH:/opt/metasploit-framework/bin
+    ```
 
 3. I define some ENVs for colored output in my terminal.
 
-  ```bash
-  export RED='\033[0;31m'
-  export GREEN='\033[0;32m'
-  export BLUE='\033[0;34m'
-  export NC='\033[0m'
-  ```
+    ```bash
+    export RED='\033[0;31m'
+    export GREEN='\033[0;32m'
+    export BLUE='\033[0;34m'
+    export NC='\033[0m'
+    ```
 
-  Now in my shell (on MacOS) or scripts I can type
+    Now in my shell (on MacOS) or scripts I can type
 
-  ```bash
-  echo -e "Elements are ${RED}fire${NC} ${BLUE}water${NC} and ${GREEN}grass${NC}"
-  ```
+    ```bash
+    echo -e "Elements are ${RED}fire${NC} ${BLUE}water${NC} and ${GREEN}grass${NC}"
+    ```
 
-  for some colorized output.
+    for some colorized output.
 
 4. I modify `Bash` specific variables like `PS1` for a more custom command line prompt. (This works for MacOS)
 
-  ```bash
-  function parse_git_branch {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-    echo "("${ref#refs/heads/}")"
-  }
+    ```bash
+    function parse_git_branch {
+      ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+      echo "("${ref#refs/heads/}")"
+    }
 
-  export PS1="${BLUE}\w${NC} \$(parse_git_branch)\n\$"
-  ```
+    export PS1="${BLUE}\w${NC} \$(parse_git_branch)\n\$"
+    ```
 
-  Now, instead of my command line prompt looking like
+    Now, instead of my command line prompt looking like
 
-  ```bash
-  Scotts-Computer-Name:mydirectory myusername$
-  ```
+    ```bash
+    Scotts-Computer-Name:mydirectory myusername$
+    ```
 
-  I see
+    I see
 
-  ```bash
-  ~/path_to_cwd (name-of-git-branch)
-  ```
+    ```bash
+    ~/path_to_cwd (name-of-git-branch)
+    $
+    ```
 
-## .bash_aliases Examples
+### .bash_aliases Examples
 
 I LOVE me some `Bash` aliases. I'm always trying to limit my keystrokes to avoid Carpal Tunnel Syndrome / I'm lazy.
 
@@ -192,7 +193,7 @@ function csv_count() {
 
 # replace YourOrgName and pass any search term as argument to this function
 # paste the URL copied to your clipboard into address bar
-# to search your Github Org's repos for specific term
+# to search your Github Org's repos for a specific term in the code
 function ghsearch() {
  echo "https://github.com/search?q=org%3AYourOrgName+$1&type=Code"
  echo "https://github.com/search?q=org%3AYourOrgName+$1&type=Code" | pbcopy
@@ -217,7 +218,7 @@ function wifi_passwd(){
 
 I have countless more aliases and functions on my machines, but I tried to select a decent variety.
 
-# Conclusion
+## Conclusion
 
 Hopefully this post helps you understand more about `Bash` configuration and customization. I encourage everyone to continue to learn more about `Bash` and to get creative customizing your shell. It will save you so much time in the long run and help you to be more efficient.
 

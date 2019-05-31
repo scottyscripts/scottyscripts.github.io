@@ -16,7 +16,7 @@
 title: scottyscripts@blog:$~
 email: sdavidson140@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog covering my experiences working with a variety of technologies. Covering software development, cybersecurity, and more!
+  My personal blog covering my experiences working with a variety of technologies. Looking at software development, cybersecurity, and more!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://scottyscripts.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  scottyscripts

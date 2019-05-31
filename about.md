@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
-My name is Scott Davidson, a software developer in the New England area. I enjoy learning more about software development and cybersecurity, and also love teaching and sharing my experiences with others.
+<img src="/assets/img/me.jpg" width="500">
 
-I have created this blog for personal development. Clearly desribing the things I do significantly helps me gain a better understanding of how they work. Also, I find it fun to share what I've learned in the hopes of helping others. 
+My name is Scott Davidson, and I'm a software developer in the New England area. I enjoy learning more about the web, software development, and cybersecurity.
+
+I have created this blog for personal development. Clearly desribing the things I do helps me gain a better understanding of how they work. While this blog is primarily for me, I hope that others can learn a thing or two from my posts!
+
+Enjoy!

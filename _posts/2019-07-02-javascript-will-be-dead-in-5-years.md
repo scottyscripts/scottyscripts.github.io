@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript Will Be Dead in 5 Years"
-date: 2019-06-26
+date: 2019-07-02
 ---
 
 ## He Was Wrong

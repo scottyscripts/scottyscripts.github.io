@@ -1,7 +1,7 @@
----
+<!-- ---
 permalink: /resume/
 title:  "Resume"
----
+--- -->
 
 <html>
   <head>
@@ -25,7 +25,7 @@ title:  "Resume"
       }
 
       #header #name {
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
         margin: 0;
       }
@@ -40,6 +40,14 @@ title:  "Resume"
       #header #contact-info-container .separator {
         padding: 0 10px;
         font-weight: bold;
+      }
+
+      #header p {
+        margin: 5px 0;
+      }
+
+      #header p span {
+        margin-right: 5px;
       }
 
       .contact-info {
@@ -90,6 +98,23 @@ title:  "Resume"
         font-size: 14px;
         margin: 5px;
       }
+
+      #profile p {
+        margin: 5px 0px;
+      }
+
+      #skills li {
+        float: left;
+        margin: 0px 5px;
+      }
+
+      #col-1 {
+        max-width: 900px;
+      }
+
+      .header-icon {
+        vertical-align: middle;
+      }
     
       @media screen and (max-width: 600px) {
         .row {
@@ -104,85 +129,51 @@ title:  "Resume"
   <body>
     <div id="header">
       <p id="name">Scott Davidson</p>
+      <p>
+        Seattle, WA |
+        <span>&#8481;</span>(603) 320-9123 |
+        <span class="header-icon">&#9993;</span>sdavidson140@gmail.com |
+        <span class="header-icon">&#9998;</span>scottyscripts.com
+      </p>
     </div>
 
     <div id="header-separator"></div>
-    
+    <!-- <div class="row">
+      <div id="profile">
+        <p class="section-header">Profile</p>
+        <p id="profile-content">I am a full stack developer with experience in all aspects of the software development lifecycle.
+          My diverse skill set and unique background give me insight into solving a broad range of problems.
+        </p>
+      </div> #profile
+    </div> -->
     <div class="row">
-      <div class="col">
-        <div id="skills">
-          <p class="section-header">Skills</p>
-          <ul>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>Elixir (Phoenix)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>JavaScript (React, React Native, Angular)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>Ruby (Rails)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>Python (Django, Flask)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>Shell Scripting (Bash)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>AWS (EC2, ECS, Lambda, Heroku)</span>
-            </li>
-            <li>
-              <span class="custom-bullet">&#10147;</span>
-              <span>Docker</span>
-            </li>
-          </ul>
-        </div> <!-- #skills -->
-    
-        <div id="education">
-          <p class="section-header">Education</p>
-          <div>
-            <p class="section-subheader">General Assembly - Web Development Immersive Bootcamp</p>
-            <p class="italic">Sep 2015 - Dec 2015</p>
-            <ul>
-              <li>
-                <span class="custom-bullet">&#10147;</span>
-                <span>12 week, full-time coding bootcamp</span>
-              </li>
-              <li>
-                <span class="custom-bullet">&#10147;</span>
-                <span>Learned to build full stack applications using JavaScript, Ruby on Rails, Node.js, Postgresql, and MongoDB</span>
-              </li>
-              <li>
-                <span class="custom-bullet">&#10147;</span>
-                <span>Collaborated with other student developers on projects</span>
-              </li>
-            </ul>
-          </div>
-    
-            <div>
-              <p class="section-subheader">Southern New Hampshire University</p>
-              <p class="italic">Jan 2015 -</p>
-              <ul>
-                <li>
-                  <span class="custom-bullet">&#10147;</span>
-                  <span>4.0 GPA</span>
-                </li>
-                <li>
-                  <span class="custom-bullet">&#10147;</span>
-                  <span>Coursework focused in computer science & information technology</span>
-                </li>
-                <li>
-              </ul>
-            </div>
-          </div> <!-- #education -->
-        </div> <!-- .col -->
-    
+      <div id="skills">
+        <p class="section-header">Skills</p>
+        <ul>
+          <li>
+            <span class="custom-bullet">&#10147;</span>
+            <span>Scripting (Bash, Ruby, Python, Perl, JavaScript)</span>
+          </li>
+          <li>
+            <span class="custom-bullet">&#10147;</span>
+            <span>Linux (Ubuntu, Kali, CentOS) </span>
+          </li>
+          <li>
+            <span class="custom-bullet">&#10147;</span>
+            <span>AWS (EC2, ECS, Lambda, Heroku)</span>
+          </li>
+          <li>
+            <span class="custom-bullet">&#10147;</span>
+            <span>Full stack development (Rails, Django, Express.js, Phoenix, SQL, NoSQL, etc.)</span>
+          </li>
+          <li>
+            <span class="custom-bullet">&#10147;</span>
+            <span>Familiarity with penetration testing tools (nmap, Metasploit, OWASP ZAP, Wireshark)</span>
+          </li>
+        </ul>
+      </div> <!-- #skills -->
+    </div>
+    <div class="row">
       <div class="col">
         <div id="experience">
           <p class="section-header">Professional Experience</p>
@@ -196,7 +187,7 @@ title:  "Resume"
               </li>
               <li>
                 <span class="custom-bullet">&#10147;</span>
-                <span>Work on variety of projects including a web application (React SPA w/ Ruby on Rails API), e-commerce store (Python / Django), and mobile application (React Native w/ Elixir / Phoenix API)</span>
+                <span>Teach software engineering to a group of over 60 junior developers</span>
               </li>
             </ul>
 
@@ -209,31 +200,29 @@ title:  "Resume"
               </li>
               <li>
                 <span class="custom-bullet">&#10147;</span>
-                <span>Collaborated with other departments to build useful tools and integrations with 3rd party software</span>
+                <span>Collaborated with other departments to build useful interanl tools and integrations with 3rd party software</span>
               </li>
             </ul>
 
           <p class="section-subheader">Forward Financing</h4>
-          <p class="italic">Automation Engineer (Oct 2018 - Apr 2019)</p>
-          <p class="italic">Associate Automation Engineer (Oct 2017 - Oct 2018)</p>
+          <p class="italic">Automation Engineer (Oct 2018 - Apr 2019) | Associate Automation Engineer (Oct 2017 - Oct 2018)</p>
           <ul>
             <li>
               <span class="custom-bullet">&#10147;</span>
-              <span>Lead formation of QA / automation team (delegated work amongst the team, created policies / procedures, and built automated test suite w/ Ruby & Capybara)</span>
+              <span>Started a QA / automation team from scratch (delegated work amongst the team, created and documented policies / procedures, and built automated test suite w/ Ruby & Capybara)</span>
             </li>
             <li>
               <span class="custom-bullet">&#10147;</span>
-              <span>Set up continuous integration / deployment (using Docker, Heroku, Github, Codeship, and Code Climate) and created Bash scripts & Elixir services to improve and monitor infrastructure</span>
+              <span>Set up continuous integration / deployment (using Docker, Heroku, Github, Codeship, and Code Climate), implemented static code analysis, and created Bash scripts & Elixir services to improve and monitor infrastructure</span>
             </li>
             <li>
               <span class="custom-bullet">&#10147;</span>
-              <span>Assisted in the hiring, onboarding, and mentoring of interns, junior developers, and automation team members</span>
+              <span>Acted as lead engineer in company push toward SOC 2 compliance (made sure data and infrastructure were compliant in Boston and Dominican Republic offices and advised legal and business ops departments)</span>
             </li>
           </ul>
     
           <p class="section-subheader">General Assembly</p>
-          <p class="italic">Instructional Associate (July 2017 - Oct 2017)</p>
-          <p class="italic">Developer in Residence (Apr 2017 - July 2017)</p>
+          <p class="italic">Instructional Associate (July 2017 - Oct 2017) | Developer in Residence (Apr 2017 - July 2017)</p>
           <ul>
             <li>
               <span class="custom-bullet">&#10147;</span>
@@ -245,7 +234,7 @@ title:  "Resume"
             </li>
           </ul>
     
-        <p class="section-subheader">inviCRO, LLC</p>
+          <p class="section-subheader">inviCRO, LLC</p>
           <p class="italic">Full Stack Software Developer (June 2016 - Jan 2017)</p>
           <p class="italic">Associate Front End Developer (Apr 2016 - June 2016)</p>
           <ul>
@@ -255,7 +244,7 @@ title:  "Resume"
             </li>
             <li>
               <span class="custom-bullet">&#10147;</span>
-              <span>Acted as lead developer on internal CRM</span>
+              <span>Worked closely with CEO to develop an internal CRM</span>
             </li>
           </ul>
         </div> <!-- #experience -->

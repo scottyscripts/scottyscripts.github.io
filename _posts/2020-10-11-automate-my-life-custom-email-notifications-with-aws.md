@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automate My Life - Using AWS to Create Custom Apartment Notifications"
+title:  "Automate My Life - Custom Email Notifications With AWS"
 date: 2020-10-11
 ---
 

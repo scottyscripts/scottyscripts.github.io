@@ -6,8 +6,8 @@ permalink: /about/
 
 <img src="/assets/img/me.jpg" width="500">
 
-My name is Scott Davidson, and I'm a software developer in the New England area. I enjoy learning more about the web, software development, and cybersecurity.
+My name is Scott Davidson, and I'm a software developer in the Seattle area. I created this blog to highlight my adventures investigating fun topics in software development, security, and more. I hope you enjoy / can learn a thing or two from my posts.
 
-I have created this blog for personal development. Clearly desribing the things I do helps me gain a better understanding of how they work. While this blog is primarily for me, I hope that others can learn a thing or two from my posts!
+I'm usually always looking for new projects to work on, so please reach out if you'd like to potentially collaborate. 
 
-Enjoy!
+Thanks for visiting. Enjoy!

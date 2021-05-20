@@ -27,7 +27,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'nokogiri', '~> 1.10', '>= 1.10.10'
+gem 'nokogiri', '~> 1.11'
 
 gem "rubyzip", ">= 1.3.0"
 
